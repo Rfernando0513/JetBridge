@@ -36,6 +36,16 @@ html{
     transform: scale(1.05);
 }
 
+.titulo{
+    text-align: center;
+    padding: 5px 4%;
+    color: #404040;
+}
+
+.titulo span{
+    color: #2783C1;
+}
+
 /*  Menu  */
 
 header{
@@ -72,10 +82,10 @@ header ul li a{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
   
     .text-banner{
-        background-color: red;
+        margin-right: 90px;
         h1{
             font-size: 12mm;
             color: #fff;
@@ -98,12 +108,28 @@ header ul li a{
 
 section.clientes{
 
-
-
     .slogan{
-        padding: 25px 0;
+        padding: 20px 0;
         background-color: #2C3E50;
         color: #fff;
         text-align: center;
+    }
+
+    .logos-cliente{
+        height: 120px;
+
+        ul{
+            list-style: none;
+        }
+
+        ul li{
+            display: inline-block;
+            margin: 5px 20px;
+        }
+
+        ul li a img{
+            height: 70px;
+            width: 100px;
+        }
     }
 }
