@@ -38,7 +38,7 @@ html{
 
 .titulo{
     text-align: center;
-    padding: 5px 4%;
+    padding: 10px 4%;
     color: #404040;
 }
 
@@ -131,5 +131,43 @@ section.clientes{
             height: 70px;
             width: 100px;
         }
+    }
+}
+
+section.serviços{
+
+    .flex{ 
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .card-servicos {
+        height: 250px;
+        width: 250px; 
+        margin-top: 40px;
+        border-radius: 20px; /* borda redonda */
+        border-width: 5px; /* largura da borda */
+        border-style: solid; /* estilo da borda */
+        border-image: linear-gradient(to top, #404040, rgba(64, 64, 64, 0)) 1; /* gradiente para a borda */
+        padding: 20px 30px; /* espaçamento interno */
+    }
+    
+    .card-servicos i{
+        font-size: 80px;
+        color: #2783C1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-servicos h4{
+        text-align: center;
+        margin-top: 10px;
+        color: #404040;
+    }
+
+    .card-servicos p{
+        color: #404040;
+        font-size: 12px;
+        margin-top: 5px;
     }
 }
