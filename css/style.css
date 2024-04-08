@@ -1,0 +1,109 @@
+/*  CLASSES GERAIS  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    height: 500vh;
+}
+
+.interface{
+    max-width: 1366px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-contato button{
+    padding: 13px 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #2783C1;
+    border-radius: 15px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.btn-contato button:hover{
+    transform: scale(1.05);
+}
+
+/*  Menu  */
+
+header{
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*  Banner  */
+
+.banner{
+    height: 80vh;
+    background-image: url(../img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .text-banner{
+        background-color: red;
+        h1{
+            font-size: 12mm;
+            color: #fff;
+            text-align: left;
+        }
+
+        .btn-contato{
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        .btn-contato button{
+            font-size: 18px;
+            border-radius: 10px;
+        }
+    }
+}
+
+/*  Clientes  */
+
+section.clientes{
+
+
+
+    .slogan{
+        padding: 25px 0;
+        background-color: #2C3E50;
+        color: #fff;
+        text-align: center;
+    }
+}
