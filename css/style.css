@@ -54,6 +54,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header ul{
@@ -70,6 +71,15 @@ header ul li a{
     text-decoration: none;
 }
 
+/*  Menu Mobile  */
+.menu-mobile{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
 /*  Banner  */
 
 .banner{
@@ -78,28 +88,31 @@ header ul li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1px;
+    padding: 1px 4%;
 
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
+    text-align: right;
   
     .text-banner{
-        margin-right: 90px;
+        margin-right: 20px;
+        max-width: 50%;
+
         h1{
-            font-size: 12mm;
+            font-size: 3rem;
             color: #fff;
-            text-align: left;
+            margin-bottom: 20px;
         }
 
         .btn-contato{
             text-align: center;
-            padding-top: 10px;
         }
         
         .btn-contato button{
-            font-size: 18px;
+            font-size: 1rem;
             border-radius: 10px;
+            padding: 15px 25px;
         }
     }
 }
@@ -116,10 +129,11 @@ section.clientes{
     }
 
     .logos-cliente{
-        height: 120px;
+        flex-wrap: wrap;
 
         ul{
             list-style: none;
+            padding: 0;
         }
 
         ul li{
@@ -169,5 +183,69 @@ section.serviços{
         color: #404040;
         font-size: 12px;
         margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    /* Gerais  */
+    .flex{
+        flex-direction: column;
+    }
+
+    /* Cabeçalho  */
+    .menu-desktop, .flex .btn-contato{
+        display: none;
+    }
+
+    /* Topo do site  */
+    .banner{    
+        height: 40vh;
+        padding: 40px 4%;
+
+        .text-banner{
+            margin: 0 auto;
+            right: 0;
+            margin-right: 60px;
+            margin-top: 20px;
+
+            h1{
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .btn-contato button{
+                font-size: 10px;
+            }
+        }
+    }
+
+    /*  Clientes  */
+    section.clientes{
+        margin-bottom: 50px;
+        .flex{
+            flex-direction: column;
+        }
+
+        .logos-cliente{
+
+            ul li a img{
+                height: 40px;
+                width: 53px;
+            }           
+        }
+    }
+    /*  Serviços  */
+    section.serviços{
+        .titulo{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .text-banner h1{
+        font-size: 24px;
     }
 }
